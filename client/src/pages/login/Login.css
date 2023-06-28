@@ -1,0 +1,43 @@
+.logincon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1{
+    font-size: 18px;
+    color: teal;
+}
+.input{
+    border: none;
+    border-bottom: 1px solid teal;
+    color: teal;
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+}
+.con button{
+    padding: 10px;
+    width: 250px;
+    margin: 15px 0;
+    background-color: teal;
+    color: black;
+    border: 1px solid teal;
+    &:hover{
+      cursor: pointer;
+      background-color: transparent;
+      color: teal;
+      border: 1px solid teal;
+    }
+}
+.link{
+    color: teal;
+}
+

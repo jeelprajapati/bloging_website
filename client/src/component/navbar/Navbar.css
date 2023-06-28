@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis&family=Roboto+Slab&display=swap');
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin: 5px 15px;
+    font-weight: bold;
+    color: teal;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.navcon{
+    width: 1324px;
+    background-color: lightblue;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.roots{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+.roots ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(108, 108, 108);
+    margin: 5px;
+}
+.write{
+    width: 60px;
+    height: 60px;
+    background-color: teal;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wlink{
+    text-decoration: none;
+    color: white;
+}
+.linktext{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px){
+  .navcon{
+    width: 100vw;
+  }   
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .write{
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .roots{
+    gap: 0;
+    margin: 0;
+  }
+  .roots ul{
+    font-size: 10px;
+    color: black;
+    margin: 0;
+    gap: 5px;
+  }
+  .span{
+    margin: 0 2px;
+    font-size: 10px;
+  }
+}

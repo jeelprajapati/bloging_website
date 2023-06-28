@@ -1,0 +1,99 @@
+.singlecon{
+    width: 1330px;
+    margin: auto;
+}
+.singleblog{
+    display: flex;
+    gap: 15px;
+}
+.main{
+    flex:3;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.submain{
+    flex: 1;
+    margin: 10px 0;
+}
+.img1{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.sblog{
+    width: 100%;
+}
+.sblog img{
+    width: 100%;
+}
+.user{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 7px;
+}
+.username{
+    font-size: 18px;
+}
+.userImg{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.update img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.delete img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.mybtn{
+    margin: 3px 0;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    border: 1px solid teal;
+    &:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: teal;
+    }
+}
+
+.filter{
+    filter: blur(2px);
+}
+
+@media only screen and (max-width: 600px){
+    .singlecon{
+      width: 100%;
+      gap: 8px;
+    }   
+    .main{
+        flex: 2;
+    }
+    .img1{
+        height: 220px;
+    }
+    .textfont{
+        font-size: 12px;
+    }
+}

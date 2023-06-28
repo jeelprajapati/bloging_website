@@ -1,0 +1,19 @@
+.footer{
+    background-color: lightblue;
+    width: 1324px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.t{
+    margin: 5px 15px;
+    color: teal;
+}
+
+@media only screen and (max-width: 600px){
+    .footer{
+      width: 100%;
+    }   
+}

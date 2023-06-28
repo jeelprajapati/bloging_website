@@ -1,0 +1,96 @@
+@keyframes example{
+    0%{
+        top:0px;
+    }
+    10%{
+        top:0.5%;
+    }
+    20%{
+        top:1%;
+    }
+    30%{
+        top:1.5%;
+    }
+    40%{
+        top:2%;
+    }
+    50%{
+        top:2.5%;
+    }
+    60%{
+        top:3%;
+    }
+    70%{
+        top:3.5%;
+    }
+    80%{
+        top:4%;
+    }
+    90%{
+        top: 4.5%;
+    }
+    100%{
+        top:5%;
+    }
+}
+.warn-container{
+    border: none;
+    width: 400px;
+    padding: 30px;
+    background-color: rgb(249, 247, 247);
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 5px 4px rgb(192, 189, 192);
+    -moz-box-shadow: 0px 2px 5px 4px rgb(192, 189, 192);
+    box-shadow: 0px 2px 5px 4px rgb(192, 189, 192);
+    position: absolute;
+    left:35%;
+    animation-duration: 0.1s;
+    animation-name:example;
+    top:3%;
+}
+
+.Warn-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.warn-massage{
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 8px;
+    background-color: rgb(249, 204, 204);
+    padding: 10px;
+}
+.warn-button{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.warn-btn{
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cancle{
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.red{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+@media only screen and (max-width: 600px){
+    .warn-container{
+        width: 288px;
+        top: 28%;
+        left:8%
+    }
+
+}

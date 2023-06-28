@@ -1,0 +1,73 @@
+.blogs{
+    width: 1330px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 80px auto;
+    :nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
+}
+.blog{
+    display: flex;
+    align-items: center;
+    height: 290px;
+    gap: 20px;
+}
+.blogImg{
+    flex: 2;
+}
+.blogImg img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.content{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+}
+.desc{
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+.btn{
+    width: fit-content;
+    color: teal;
+    border: 1px solid teal;
+    padding: 10px;
+    background-color: transparent;
+    &:hover{
+        cursor: pointer;
+        background-color: teal;
+        color: black;
+        border: 1px solid teal;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .blogs{
+      width: 100%;
+      margin: 35px auto;
+    }   
+    .blog:nth-child(n){
+        flex-direction: column;
+        height: fit-content;
+    }
+    .blogImg img{
+        width: 96%;
+        height: 238px;
+    }
+    .title,.desc{
+        font-size: 14px;
+    }
+}
