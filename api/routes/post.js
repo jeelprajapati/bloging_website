@@ -31,7 +31,7 @@ route.get('/:id',(req,res)=>{
 })
 //ADD POST
 route.post('/add',verifyToken,(req,res)=>{
-    const q="INSERT INTO post(`title`,`dsc`,`userid`,`cat`,`img`) VALUES (?,?,?,?,?)";
+    const q="INSERT INTO post(`title`,`desc`,`userid`,`cat`,`img`) VALUES (?,?,?,?,?)";
     const postData=[
         req.body.title,
         req.body.desc,
